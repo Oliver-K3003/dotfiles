@@ -1,0 +1,5 @@
+--local mkdnpv = require('markdown-preview.nvim')
+--
+--vim.keymap.set('n', '<leader>mv', mkdnpv.MarkdownPreview)
+--vim.keymap.set('n', '<leader>ms', mkdnpv.MarkdownPreviewStop)
+--vim.keymap.set('n', '<leader>mt', mkdnpv.MarkdownPreviewToggle)
