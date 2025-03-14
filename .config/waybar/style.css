@@ -1,0 +1,25 @@
+*{
+    font-size: 12px;
+}
+
+#waybar {
+    background-color: alpha(#101324, 0.5);
+    border: 1px solid alpha(#374a68, 0.7);
+    border-radius: 10px;
+    margin: 20px 10px 10px 20px
+}
+
+button {
+    background-color: #101324;
+    border-radius: 10px;
+    border: 1px solid #a5b5c5;
+    transition: all 200ms ease-in-out;
+}
+
+button:hover {
+    background-color: #203552; 
+}
+
+#clock {
+    margin-right: 20px;
+}
