@@ -12,5 +12,7 @@ PS1='[\u@\h \W]\$ '
 # setup nvm
 . /usr/share/nvm/init-nvm.sh
 
+# setup dotfiles sync
+alias dotsync='/usr/bin/git --git-dir=/home/oliver/.cfg/ --work-tree=/home/oliver'
+
 neofetch
-alias dotsync='usr/bin/git --git-dir=/home/oliver/.cfg/ --work-tree=/home/oliver'

@@ -1,28 +1,37 @@
+// -*- mode: jsonc -*-
 {
+    "reload_style_on_change": true,
     "layer": "bottom",
     "position": "top",
-    "height": 30,
-    "spacing": 10,
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["cpu", "memory", "pulseaudio", "clock", "tray"],
-    "cpu": {
-        "interval": 30,
-        "format": "\uf4bc \t{usage}"
-    },
-    "memory": {
-        "interval": 30,
-        "format": "\uefc5 \t{percentage}%"
+    "height": 35,
+    "spacing": 4,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "tray", 
+        "clock",
+        "pulseaudio"
+    ],
+    "hyprland/window": {
+        "max-length": 50,
+        "seperate-outputs": true
     },
     "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%H:%M %Y/%m/%d}"
     },
     "pulseaudio": {
-        "format": "{volume}% \uf028",
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "format-muted": "{volume}% \uf026"
+        "format": "{volume}% {icon} {format_source}",
+        "on-click": "pavucontrol",
+        "format-muted": "",
+        "format-source": ""
     },
     "tray": {
-        "icon-size": 20,
+        //"icon-size": 20,
         "spacing": 10
     }
 //    "hyprland/window": {
