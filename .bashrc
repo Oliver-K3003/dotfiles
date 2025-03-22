@@ -15,4 +15,7 @@ PS1='[\u@\h \W]\$ '
 # setup dotfiles sync
 alias dotsync='/usr/bin/git --git-dir=/home/oliver/.cfg/ --work-tree=/home/oliver'
 
+HYPRSHOT_DIR='/home/oliver/screenshots'
+
 neofetch
+. "$HOME/.cargo/env"

@@ -1,7 +1,8 @@
 // -*- mode: jsonc -*-
 {
     "reload_style_on_change": true,
-    "layer": "bottom",
+    "layer": "top",
+    "output": "DP-1",
     "position": "top",
     "height": 35,
     "spacing": 4,
@@ -22,7 +23,7 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%H:%M %Y/%m/%d}"
+        "format": "{:L%H:%M %Y/%m/%d}"
     },
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
