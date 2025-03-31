@@ -2,9 +2,8 @@
 {
     "reload_style_on_change": true,
     "layer": "top",
-    "output": "DP-1",
     "position": "top",
-    "height": 35,
+    "height": 40,
     "spacing": 4,
     "modules-left": [
         "hyprland/workspaces"
@@ -14,17 +13,21 @@
     ],
     "modules-right": [
         "tray", 
-        "clock",
+        "custom/clock",
         "pulseaudio"
     ],
     "hyprland/window": {
         "max-length": 50,
         "seperate-outputs": true
     },
-    "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:L%H:%M %Y/%m/%d}"
+    "custom/clock": {
+        "exec": "echo ' '$(date +'%H:%M %m-%d-%Y')' '",
+        "interval": 5
     },
+//    "clock": {
+//        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+//        "format": "{:L%H:%M %Y/%m/%d}"
+//    },
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
         "on-click": "pavucontrol",

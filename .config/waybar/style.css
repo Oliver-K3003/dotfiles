@@ -7,23 +7,23 @@
     background-color: alpha(#101324, 0.5);
     border: 1px solid alpha(#374a68, 0.7);
     border-radius: 10px;
+    border-bottom: 5px solid #374168;
 }
 
 #workspaces button.active{
-    background-color: #203552;
+    background-color: #374168;
 }
 
 #pulseaudio {
-    transition: background-color 200ms ease-in-out;
+    transition: color 300ms ease-in-out;
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 #pulseaudio:hover {
-    background-color: #203552; 
+    color: #fff;
 }
 
-#tray,
-#clock {
-    padding: 0 10px;
+#custom-clock {
+    margin-right: 10px;
 }

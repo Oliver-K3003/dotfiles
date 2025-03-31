@@ -4,4 +4,9 @@ cursor-color = #374a68
 cursor-text = #111c2a
 selection-background = #203552
 selection-foreground = #374a68
+palette = 0=#101324
+palette = 1=#8a0000
+palette = 3=#02a16e
 palette = 3=#374a68
+
+palette = 15=#a5b5c5
