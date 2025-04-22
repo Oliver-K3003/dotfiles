@@ -31,5 +31,3 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", function()
 	vim.lsp.buf.format()
 end)
-
-
