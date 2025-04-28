@@ -1,6 +1,7 @@
 *{
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
+    color: #fff;
 }
 
 #waybar {
@@ -26,4 +27,12 @@
 
 #custom-clock {
     margin-right: 10px;
+}
+
+#battery {
+    margin-right: 10px;
+}
+
+#network {
+    margin-right: 25px;
 }

@@ -13,8 +13,10 @@
     ],
     "modules-right": [
         "tray", 
+        "battery",
         "custom/clock",
-        "pulseaudio"
+        "pulseaudio",
+        "network",
     ],
     "hyprland/window": {
         "max-length": 50,
@@ -37,7 +39,31 @@
     "tray": {
         //"icon-size": 20,
         "spacing": 10
-    }
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
 //    "hyprland/window": {
 //        "format": "<sub>{icon}</sub>\n{window}",
 //        "window-rewrite-default": "\nf2d0",
