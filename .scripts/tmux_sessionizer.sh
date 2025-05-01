@@ -8,7 +8,7 @@ if [[ -z $sessionDir ]]; then
 fi
 
 # create session name from path
-sessionName=`basename $sessionDir`
+sessionName=`basename $sessionDir | tr . _`
 
 tmux_alive=`pgrep tmux`
 
