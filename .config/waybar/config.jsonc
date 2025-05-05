@@ -17,14 +17,19 @@
         "custom/clock",
         "pulseaudio",
         "network",
+        "custom/clock2",
     ],
     "hyprland/window": {
         "max-length": 50,
         "seperate-outputs": true
     },
     "custom/clock": {
-        "exec": "echo ' '$(date +'%H:%M %m-%d-%Y')' '",
+        "exec": "echo ' '$(date +'%H:%M')' '",
         "interval": 5
+    },
+    "custom/clock2": {
+        "exec": "echo ' '$(date +'%m-%d-%Y')' '",
+        "interval": 3600
     },
 //    "clock": {
 //        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",

@@ -26,13 +26,16 @@
 }
 
 #custom-clock {
-    margin-right: 10px;
+    margin: 0 10px;
+}
+#custom-clock2 {
+    margin: 0 10px;
 }
 
 #battery {
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 #network {
-    margin-right: 25px;
+    margin-right: 7px;
 }
