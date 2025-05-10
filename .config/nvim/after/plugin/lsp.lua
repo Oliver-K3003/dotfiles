@@ -39,6 +39,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     --vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', opts)
     --vim.keymap.set('n', 'go', '<cmd>lua vim.lsp.buf.type_definition()<cr>', opts)
     vim.keymap.set({'n', 'x'}, '<leader>fx', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
+    vim.keymap.set('n', '<leader>frn', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
   end,
 })
 

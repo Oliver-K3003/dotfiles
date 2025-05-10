@@ -1,0 +1,15 @@
+#!/bin/bash
+
+SUM=0
+
+for val in "$@"
+do
+    str="*.$val"
+    RESULT=($((find ./ -name "$str" -print0 | xargs -0 cat) | wc -l))
+    for res in "${RESULT[@]}"
+    do
+        SUM=$(($SUM + $res))
+    done
+done
+
+echo $SUM

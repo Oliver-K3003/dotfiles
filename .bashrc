@@ -24,3 +24,5 @@ export JAVA_HOME=$HOME/.jdk/jdk-24.0.1
 export PATH=$JAVA_HOME/bin:$PATH
 
 export PATH=$HOME/.mvn/maven-mvnd-1.0.2-linux-amd64/mvn/bin:$PATH
+
+export PATH=$HOME/.scripts/bin:$PATH
